@@ -1,0 +1,88 @@
+body { font-family: 'Inter', Arial, sans-serif; margin:0; }
+.active-menu { background-color:#6d28d9; color:#fff !important; font-weight:600; }
+.active-menu:hover { background-color:#6d28d9; color:#fff; }
+aside nav a { transition:background-color .18s ease, color .18s ease; }
+aside nav a:not(.active-menu):hover { background:#f3e8ff; color:#5b21b6; }
+aside nav a:focus { outline:none; }
+.stat-card { background:#f5f7fd; }
+
+/* Token-like helper classes to mimic shadcn/ui naming from sample */
+.bg-card { background:#ffffff; }
+.text-card-foreground { color:#1f2937; }
+.text-muted-foreground { color:#6b7280; }
+.bg-muted { background:#f5f7fd; }
+
+/* Utility overrides for consistent rounding and borders */
+[data-slot="card"] { border-color:#e5e7eb; }
+[data-slot="card"] .rounded-lg, .rounded-xl { border-radius:0.75rem; }
+
+/* Ensure inner badge font weight */
+.badge { font-weight:500; }
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin-right: 10px;
+  padding: 6px 12px;
+}
+
+.menu-section {
+  margin-top: 20px;
+}
+
+form input, form select, form button {
+  margin: 5px;
+  padding: 6px;
+}
+
+/* Panel (card-like) */
+.panel { background:#f5f8fc; border:1px solid #e5e7eb; border-radius:12px; padding:1.25rem 1.25rem 1.5rem; }
+.panel-header { border-bottom:1px solid #e5e7eb; padding-bottom:.75rem; }
+
+/* Form */
+.form-group { display:flex; flex-direction:column; gap:.4rem; }
+.form-label { font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; font-weight:600; color:#475569; }
+.form-input { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:.65rem .85rem; font-size:.85rem; color:#1e293b; width:100%; }
+.form-input:focus { outline:2px solid #6366f1; outline-offset:1px; background:#fff; }
+
+/* Buttons */
+.btn-primary { background:#0f172a; color:#fff; font-weight:600; padding:.65rem 1.4rem; border-radius:6px; font-size:.8rem; line-height:1; display:inline-block; }
+.btn-primary:hover { background:#1e293b; }
+
+/* New utility inputs/buttons for refined form (workorder) */
+.tw-input { background:transparent; border:1px solid #d0d7e3; height:2.25rem; border-radius:0.5rem; padding:0 .9rem; font-size:.875rem; line-height:1.2; box-shadow:0 0 0 0 rgba(0,0,0,0); transition:.18s; }
+.tw-input:focus { outline:0; border-color:#6366f1; box-shadow:0 0 0 3px rgba(99,102,241,.35); }
+.tw-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; background:#4f46e5; color:#fff; font-weight:600; font-size:.8rem; padding:.55rem 1.1rem; border-radius:.5rem; height:2.25rem; transition:.18s; }
+.tw-btn-primary:hover { background:#4338ca; }
+.tw-btn-primary:focus { outline:0; box-shadow:0 0 0 3px rgba(99,102,241,.35); }
+
+/* Tokens for new form/card (approximation) */
+.bg-primary { background:#4f46e5; }
+.text-primary-foreground { color:#ffffff; }
+.bg-background { background:transparent; }
+.border-input { border-color:#d0d7e3; }
+.shadow-xs { box-shadow:0 1px 2px rgba(0,0,0,.04); }
+.hover\:bg-primary\/90:hover { background:#4338ca; }
+.wo-input:focus { outline:none; border-color:#6366f1; box-shadow:0 0 0 3px rgba(99,102,241,.35); }
+
+/* Table */
+.table-clean { border-collapse:separate; border-spacing:0 0; width:100%; }
+.table-clean thead tr { background:transparent; }
+.table-clean th { font-size:.65rem; text-transform:uppercase; letter-spacing:.05em; font-weight:600; color:#475569; text-align:left; padding:.75rem 1rem; border-bottom:1px solid #e2e8f0; }
+.table-clean td { padding:.85rem 1rem; border-bottom:1px solid #f1f5f9; font-size:.8rem; color:#1e293b; }
+.table-clean tbody tr:last-child td { border-bottom:none; }
+
+/* Status badge refined */
+.status-badge { font-size:.65rem; font-weight:600; padding:.3rem .55rem; border-radius:6px; line-height:1; display:inline-block; }
+.status-belum { background:#fef9c3; color:#854d0e; }
+.status-proses { background:#dbeafe; color:#1e40af; }
+.status-selesai { background:#dcfce7; color:#166534; }
+
+/* Action buttons */
+.action-btn { width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:6px; font-size:.75rem; font-weight:600; }
+.action-edit { background:#f1f5f9; color:#334155; }
+.action-edit:hover { background:#e2e8f0; }
+.action-del { background:#ff6a00; color:#fff; }
+.action-del:hover { background:#ea580c; }
