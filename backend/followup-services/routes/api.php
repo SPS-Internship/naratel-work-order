@@ -156,7 +156,7 @@ $router->get('/api/request-extend', function() use ($requestExtendController) {
     });
 });
 
-// Get by kode_mitra - route spesifik harus diatas route general
+// Get by kode_mitra - route spesifik harus diatas route generals
 $router->get('/api/request-extend/mitra/([A-Za-z0-9\-_]+)', function($kode_mitra) use ($requestExtendController) { 
     handleControllerError(function() use ($requestExtendController, $kode_mitra) {
         $requestExtendController->getByMitra($kode_mitra); 
