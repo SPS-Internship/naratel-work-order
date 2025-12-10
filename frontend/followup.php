@@ -1,6 +1,6 @@
 <?php include __DIR__.'/partials/header.php'; ?>
 
-<div class="min-h-screen bg-gray-50 p-6">
+<div class="min-h-screen bg-white p-6">
   <div class="max-w-7xl mx-auto">
     <!-- Header -->
     <div class="mb-6">
@@ -11,14 +11,14 @@
     <!-- Filter & Button -->
     <div class="flex justify-between items-center mb-4">
       <div>
-        <select id="filterStatus" class="border border-gray-300 rounded px-3 py-2 text-gray-700">
+        <select id="filterStatus" class="border border-gray-300 rounded px-4 py-2 pl-4 border-2 border-[#FFB367] text-black bg-[#FFFDE8]">
           <option value="">Semua Status</option>
           <option value="active">Active</option>
           <option value="pending">Pending</option>
           <option value="inactive">Inactive</option>
         </select>
       </div>
-      <button id="btnAddFollowup" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+      <button id="btnAddFollowup" class="bg-[#FF9642] hover:bg-[#FFE277] text-black px-4 py-2 rounded">
         + Tambah Follow-up
       </button>
     </div>
@@ -26,16 +26,16 @@
     <!-- Table -->
     <div class="bg-white shadow rounded-lg overflow-x-auto">
       <table class="min-w-full divide-y divide-gray-200">
-        <thead class="bg-gray-50">
+        <thead class="bg-[#FFE277]">
           <tr>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kode User</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kelurahan</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Paket</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tanggal JthTempo</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Janji Bayar</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Aksi</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">ID</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Kode User</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Kelurahan</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Paket</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Status</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Tanggal JthTempo</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Janji Bayar</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Aksi</th>
           </tr>
         </thead>
         <tbody id="followupTable" class="divide-y divide-gray-200">
@@ -143,8 +143,8 @@
       </div>
 
       <div class="flex justify-end gap-2 mt-4">
-        <button type="button" id="closeModal" class="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded">Batal</button>
-        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Simpan</button>
+        <button type="button" id="closeModal" class="bg-[#FFE277] hover:bg-[#FF9642] px-4 py-2 rounded">Batal</button>
+        <button type="submit" class="bg-[#FF9642] hover:bg-[#FFE277] text-black px-4 py-2 rounded">Simpan</button>
       </div>
     </form>
   </div>

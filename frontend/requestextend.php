@@ -1,6 +1,6 @@
 <?php include __DIR__.'/partials/header.php'; ?>
 
-<div class="min-h-screen bg-gray-50 p-6">
+<div class="min-h-screen bg-white p-6">
   <div class="max-w-7xl mx-auto">
     <!-- Header -->
     <div class="mb-6">
@@ -11,14 +11,14 @@
     <!-- Filter & Button -->
     <div class="flex justify-between items-center mb-4">
       <div>
-        <select id="filterStatus" class="border border-gray-300 rounded px-3 py-2 text-gray-700">
+        <select id="filterStatus" class="border border-gray-300 rounded px-3 py-2 text-black bg-[#FFFDE8]">
           <option value="">Semua Status</option>
           <option value="pending">Pending</option>
           <option value="approved">Approved</option>
           <option value="rejected">Rejected</option>
         </select>
       </div>
-      <button id="btnAddRequest" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+      <button id="btnAddRequest" class="bg-[#FFE277] hover:bg-[#FF9642] text-black px-4 py-2 rounded">
         + Tambah Request
       </button>
     </div>
@@ -26,16 +26,16 @@
     <!-- Table -->
     <div class="bg-white shadow rounded-lg overflow-x-auto">
       <table class="min-w-full divide-y divide-gray-200">
-        <thead class="bg-gray-50">
+        <thead class="bg-[#FF9642]">
           <tr>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kode User</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Paket</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nominal</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status Request</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Invoice</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">After Tgl</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Before Tgl</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Aksi</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Kode User</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Paket</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Nominal</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Status Request</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Invoice</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">After Tgl</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Before Tgl</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Aksi</th>
           </tr>
         </thead>
         <tbody id="requestTable" class="divide-y divide-gray-200">

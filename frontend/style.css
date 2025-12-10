@@ -8,17 +8,18 @@ body {
 /* Sidebar Menu */
 .active-menu { 
   background-color:#FF9642; 
-  color:#fff !important; 
+  color:#000000 !important; 
   font-weight:600; 
 }
 .active-menu:hover { 
   background-color:#FF9642; 
-  color:#fff; 
+  color:#ffffff;
+   
 }
 aside nav a { transition:background-color .18s ease, color .18s ease; }
 aside nav a:not(.active-menu):hover { 
-  background:#FFE05D; 
-  color:#646464; 
+  background:#FFE277; 
+  color:#000000;
 }
 aside nav a:focus { outline:none; }
 

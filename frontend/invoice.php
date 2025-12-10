@@ -1,6 +1,6 @@
 <?php include __DIR__.'/partials/header.php'; ?>
 
-<div class="min-h-screen bg-gray-50 p-6">
+<div class="min-h-screen bg-white p-6">
   <div class="max-w-7xl mx-auto">
     <!-- Header -->
     <div class="mb-6">
@@ -11,13 +11,13 @@
     <!-- Filter & Button -->
     <div class="flex justify-between items-center mb-4">
       <div>
-        <select id="filterStatus" class="border border-gray-300 rounded px-3 py-2 text-gray-700">
+        <select id="filterStatus" class="border border-gray-300 rounded px-3 py-2 text-black bg-[#FFFDE8]">
           <option value="">Semua Status</option>
           <option value="pending">Pending</option>
           <option value="success">Success</option>
         </select>
       </div>
-      <button id="btnAddInvoice" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+      <button id="btnAddInvoice" class="bg-[#FF9642] hover:bg-[#FFE277] text-black px-4 py-2 rounded">
         + Tambah Invoice
       </button>
     </div>
@@ -25,13 +25,13 @@
     <!-- Table -->
     <div class="bg-white shadow rounded-lg overflow-x-auto">
       <table class="min-w-full divide-y divide-gray-200">
-        <thead class="bg-gray-50">
+        <thead class="bg-[#FFE277]">
           <tr>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Kode Invoice</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Jumlah</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tanggal Invoice</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Aksi</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Kode Invoice</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Jumlah</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Status</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Tanggal Invoice</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase">Aksi</th>
           </tr>
         </thead>
         <tbody id="invoiceTable" class="divide-y divide-gray-200">
@@ -44,7 +44,7 @@
 
 <!-- Modal Tambah/Edit -->
 <div id="modalInvoice" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-  <div class="bg-white rounded-lg w-full max-w-2xl p-6 overflow-y-auto max-h-[90vh]">
+  <div class="bg-white rounded-lg w-full max-w-2xl p-6 overflow-y-auto max-h-[90vh] ">
     <h2 class="text-lg font-semibold mb-4" id="modalTitle">Tambah Invoice</h2>
     <form id="invoiceForm" class="space-y-4">
       <input type="hidden" id="old_code_invoice">
